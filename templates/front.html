@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body bgcolor=#f0f0f0>
+    <center>
+        <h1> Income Prediction</h1>
+        <br><br>
+        <form method="POST" ,action="{{url_for('inc_prediction')}}">
+        <b> default : <select name="data1",id="data1",required="required">
+        <option value=0>No</option>
+        <option value=1>Yes</option>
+        </select>
+                
+            student : <select name="data2",id="data2",required="required">
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+
+            balance : <input type="text",name="data3",placeholder="*Enter balance"><br><br>
+            <b>
+            <br><br>
+            <input type="submit",value="predict">
+
+        </form>
+    </center>
+</body>
+</html>
