@@ -8,24 +8,26 @@
 </head>
 <body bgcolor=#f0f0f0>
     <center>
-        <h1> Income Prediction</h1>
+        <h1>Income Prediction</h1>
         <br><br>
-        <form method="POST" ,action="{{url_for('inc_prediction')}}">
-        <b> default : <select name="data1",id="data1",required="required">
-        <option value=0>No</option>
-        <option value=1>Yes</option>
-        </select>
+        <form method="POST" action="{{ url_for('inc_prediction') }}">
+            <b>Default:</b>
+            <select name="data1" id="data1" required="required">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
                 
-            student : <select name="data2",id="data2",required="required">
-                <option value=0>No</option>
-                <option value=1>Yes</option>
+            Student:
+            <select name="data2" id="data2" required="required">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
             </select>
 
-            balance : <input type="text",name="data3",placeholder="*Enter balance"><br><br>
-            <b>
-            <br><br>
-            <input type="submit",value="predict">
+            Balance:
+            <input type="text" name="data3" placeholder="*Enter balance"><br><br>
 
+            <b><br><br>
+            <input type="submit" value="Predict">
         </form>
     </center>
 </body>
